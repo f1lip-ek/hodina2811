@@ -3,21 +3,22 @@ import java.util.Iterator;
 public class IteratorListik implements Iterator<Integer> {
 
     private Listik listik;
-    private int index;
+    private int aktualniIndex;
 
     public IteratorListik(Listik listik){
         this.listik = listik;
-        this.index = listik.size() -1;
+        this.aktualniIndex = listik.size() -1;
     }
 
 
     @Override
     public boolean hasNext() {
-        return false;
+        return aktualniIndex > -1;
     }
 
     @Override
     public Integer next() {
-        return 0;
+        aktualniIndex--;
+        return listik.get(aktualniIndex+1);
     }
 }
