@@ -6,6 +6,11 @@ public class Listik implements Iterable<Integer>{
     private ArrayList<Integer> listik;
 
 
+    public int size(){
+        return listik.size();
+    }
+
+
     public void addNumber(int number){
         listik.add(number);
     }
