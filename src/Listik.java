@@ -10,6 +10,10 @@ public class Listik implements Iterable<Integer>{
         return listik.size();
     }
 
+    public Integer get(int index){
+        return listik.get(index);
+    }
+
 
     public void addNumber(int number){
         listik.add(number);
